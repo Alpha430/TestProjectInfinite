@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_height="0dp">
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:layout_height="wrap_content">
+
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+
+                       android:text="Previos Number"
+                       android:textSize="14sp"
+                       android:paddingLeft="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+                   <TextView
+                       android:id="@+id/txtPrevNumber"
+                       android:text="__"
+                       android:textSize="40sp"
+                       android:gravity="center"
+                       android:paddingLeft="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_marginRight="10dp"
+                   android:orientation="vertical"
+                   android:gravity="end"
+                   android:layout_height="wrap_content">
+
+                   <Button
+                       android:id="@+id/txtNewGame"
+                       android:text="Start New Game"
+                       android:gravity="center"
+                       android:textColor="#ffffff"
+                       android:padding="10dp"
+                       android:layout_marginTop="10dp"
+                       android:visibility="visible"
+                       android:background="@color/colorPrimary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+           <TextView
+               android:id="@+id/txtselNo"
+               android:layout_width="wrap_content"
+               android:textSize="65sp"
+               android:text="0"
+               android:textColor="@color/colorPrimary"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:text="Touch to pick a number"
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:textSize="12sp"
+               android:layout_height="wrap_content" />
+
+
+
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_weight="2"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+           android:gravity="center"
+           android:layout_height="0dp">
+
+
+           <GridView
+               android:numColumns="10"
+               android:gravity="center"
+               android:columnWidth="100dp"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:id="@+id/grid"
+               />
+
+       </LinearLayout>
+   </LinearLayout>
+
+</RelativeLayout>
